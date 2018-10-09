@@ -8,6 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0",
     "nodemon": "^1.18.4",
     "vue": "^2.5.17"
   },

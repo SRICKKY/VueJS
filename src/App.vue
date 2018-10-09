@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <Navbar />
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AnotherComponent anothermsg="This is from AnotherComponent" />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import AnotherComponent from './components/AnotherComponent'
+import Navbar from './components/Navbar'
+
+import '../node_modules/materialize-css/dist/css/materialize.min.css'
+import '../node_modules/materialize-css/dist/js/materialize.min.js'
+import '../node_modules/jquery/dist/jquery.min.js'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    // Navbar,
+    AnotherComponent,
   }
 }
 </script>
@@ -23,6 +32,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
